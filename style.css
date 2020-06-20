@@ -1,0 +1,189 @@
+*{
+	margin:0;
+	padding:0;
+		overflow:auto;
+}
+
+html{
+	font-family:helvetica, arial;
+}
+
+div{
+	vertical-align: top;
+}
+
+#algorithms{
+	background: #ccc;
+
+}
+
+.example{
+	background: #d7d7d7;
+	margin:10px 0;
+}
+
+.description{
+	display:inline-block;
+	width:44%;
+	padding:20px 3%;
+	background: #ebebeb;
+}
+
+.formandresult{
+	display:inline-block;
+	width:43%;
+	padding:3%;
+	text-align: center;
+}
+
+input{
+	display:block;
+	left:5%;
+	width:40%;
+	clear:right;
+	margin:0 auto;
+	text-align: center;
+	font-size: 14px;
+	padding: 6px 0;
+}
+
+li{
+	margin:0 20px;
+}
+
+h2, h4{
+	margin:10px 0 0 0;
+}
+h3{
+	margin:0 0 10px 0;
+}
+
+.blue_title{
+	color: #0054a6;
+	margin:10px 1.5%;
+}
+.main_title{
+	color: #000;
+	margin:10px 1.5%;
+}
+
+
+/*bootstrap classes START*/
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success:focus,
+.btn-success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open > .dropdown-toggle.btn-success:focus,
+.btn-success:active.focus,
+.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+
+/*bootstrap classes END*/
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+		.description{
+			display:inline-block;
+			width:100%;
+			padding:20px 3%;
+			background: #ebebeb;
+		}
+
+		.formandresult{
+			display:inline-block;
+			width:100%;
+			padding:3%;
+			text-align: center;
+		}
+
+}
+
+/*iPhone 6*/
