@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Practice</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Javascript Practice, Algorithms">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="M.Bui">
+
+</head>
+<body>
+
+	<div id="header">
+		<h2 class="main_title">Javascript Practice</h2>
+	</div>
+
+	<div id="algorithms">
+
+		<h3 class="blue_title">Basic Scipting Algorithms</h3>
+
+		<!--##  1  ##-->
+		<div class="example">
+			<div class="description">
+				<h3>Reverse a String</h3>
+				<p>Reverse the provided string.</p>
+				<p>You may need to turn the string into an array before you can reverse it.</p>
+				<p>Your result must be a string.</p>
+				<p>Remember to use Read-Search-Ask if you get stuck. Write your own code.</p>
+
+				<h4>Concepts:</h4>
+				<ul>
+					<li>Global String Object</li>
+					<li>String.split()</li>
+					<li>Array.reverse()</li>
+					<li>Array.join()</li>
+				</ul>
+				<h4>Harder Test Data:</h4>
+				<p>Greetings from Earth</p>
+			</div>
+			<!--description-->
+
+			<div class="formandresult">
+				<form id="form" onsubmit="return false;">
+		    	<input
+			    	type="text"
+			    	id="reverseInput" 
+			    	onfocus="if (this.value == 'ENTER A STRING') { this.value = ''; }"
+			    	onblur="if (this.value == '') { this.value = 'ENTER A STRING'; }"
+			    	value='ENTER A STRING'
+		    	/>
+		    	<input type="submit" class="btn btn-success" value="Submit Button" onclick="reverseString();">
+		    	<!--calls reverseString Function in algorithms.js-->
+				</form>
+
+				<div class="result">
+					<h2>RESULTS:</h2>
+
+					<h2 id="reverseIt">
+					</h2>
+
+				</div>
+				<!--result-->
+			</div>
+			<!--formandresult-->
+  	</div>
+  	<!--example-->
+
+		<!--##  2  ##-->
+		<div class="example">
+			<div class="description">
+				<h3>Factorialize a Number</h3>
+				<p>Return the factorial of the provided integer.</p>
+				<p>If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.</p>
+				<p>Factorials are often represented with the shorthand notation n!</p>
+				<p>For example: 5! = 1 * 2 * 3 * 4 * 5 = 120</p>
+
+				<h4>Concepts:</h4>
+				<ul>
+					<li>Arithmetic Operators</li>
+				</ul>
+				<h4>Harder Test Data:</h4>
+				<p>20</p>
+			</div><!--description-->
+
+			<div class="formandresult">
+				<form id="form" onsubmit="return false;">
+		    	<input
+			    	type="text"
+			    	id="factorializeInput"
+			    	onfocus="if (this.value == 'ENTER AN INTEGER') { this.value = ''; }"
+			    	onblur="if (this.value == '') { this.value = 'ENTER AN INTEGER'; }"
+			    	value='ENTER AN INTEGER'
+		    	/>
+		    	<input type="submit" class="btn btn-success" value="Submit Button" onclick="factorialize();">
+		    	<!--calls factorialize Function in algorithms.js-->
+				</form>
+
+				<div class="result">
+					<h2>RESULTS:</h2>
+
+					<h2 id="factorializeIt">
+					</h2>
+
+				</div>
+				<!--result-->
+			</div>
+			<!--formandresult-->
+  	</div>
+  	<!--example-->
+
+		<!--##  3  ##-->
+		<div class="example">
+			<div class="description">
+				<h3>Check for Palindromes</h3>
+				<p>Return true if the given string is a palindrome. Otherwise, return false.</p>
+
+				<p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+
+				<p>Note:<br />
+				You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything lower case in order to check for palindromes.</p>
+
+				<p>We'll pass strings with varying formats, such as "racecar", "RaceCar", and"race CAR" among others.</p>
+
+
+				<h4>Concepts:</h4>
+				<ul>
+					<li>String.replace()</li>
+					<li>String.toLowerCase()</li>
+				</ul>
+				<h4>Harder Test Data:</h4>
+				<p>A man, a plan, a canal. Panama</p>
+			</div><!--description-->
+
+			<div class="formandresult">
+				<form id="form" onsubmit="return false;">
+		    	<input
+			    	type="text"
+			    	id="palindromeInput"
+			    	onfocus="if (this.value == 'ENTER A STRING') { this.value = ''; }"
+			    	onblur="if (this.value == '') { this.value = 'ENTER A STRING'; }"
+			    	value='ENTER A STRING'
+		    	/>
+
+
+		    	<input type="submit" class="btn btn-success" value="Submit Button" onclick="palindrome();">
+		    	<!--calls palindrome Function in algorithms.js-->
+				</form>
+
+				<div class="result">
+					<h2>RESULTS:</h2>
+
+					<h2 id="palindromeIt">
+					</h2>
+
+				</div>
+				<!--result-->
+			</div>
+			<!--formandresult-->
+  	</div>
+  	<!--example-->
+
+		<!--##  4  ##-->
+		<div class="example">
+			<div class="description">
+				<h3>Find the Longest Word in a String</h3>
+				<p>Return the length of the longest word in the provided sentence.</p>
+
+				<p>Your response should be a number.</p>
+
+				<h4>Concepts:</h4>
+				<ul>
+					<li>String.split()</li>
+					<li>String.length</li>
+				</ul>
+				<h4>Harder Test Data:</h4>
+				<p>The quick brown fox jumped over the lazy dog</p>
+			</div><!--description-->
+
+			<div class="formandresult">
+				<form id="form" onsubmit="return false;">
+		    	<input
+			    	type="text"
+			    	id="longestInput"
+			    	onfocus="if (this.value == 'ENTER A SENTENCE') { this.value = ''; }"
+			    	onblur="if (this.value == '') { this.value = 'ENTER A SENTENCE'; }"
+			    	value='ENTER A SENTENCE'
+		    	/>
+
+
+		    	<input type="submit" class="btn btn-success" value="Submit Button" onclick="findLongestWord();">
+		    	<!--calls findLongestWord Function in algorithms.js-->
+				</form>
+
+				<div class="result">
+					<h2>RESULTS:</h2>
+
+					<h2 id="longestIt">
+					</h2>
+
+				</div>
+				<!--result-->
+			</div>
+			<!--formandresult-->
+  	</div>
+  	<!--example-->
+
+		<!--##  5  ##-->
+		<div class="example">
+			<div class="description">
+				<h3>Title Case a Sentence</h3>
+				<p>Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.</p>
+
+				<p>For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".</p>
+
+
+				<h4>Concepts:</h4>
+				<ul>
+					<li>String.split()</li>
+				</ul>
+				<h4>Harder Test Data:</h4>
+				<p>HERE IS MY HANDLE HERE IS MY SPOUT</p>
+			</div><!--description-->
+
+			<div class="formandresult">
+				<form id="form" onsubmit="return false;">
+		    	<input
+			    	type="text"
+			    	id="titleCaseInput"
+			    	onfocus="if (this.value == 'ENTER A SENTENCE') { this.value = ''; }"
+			    	onblur="if (this.value == '') { this.value = 'ENTER A SENTENCE'; }"
+			    	value='ENTER A SENTENCE'
+		    	/>
+
+
+		    	<input type="submit" class="btn btn-success" value="Submit Button" onclick="titleCase();">
+		    	<!--calls findLongestWord Function in algorithms.js-->
+				</form>
+
+				<div class="result">
+					<h2>RESULTS:</h2>
+
+					<h2 id="titleCaseIt">
+					</h2>
+
+				</div>
+				<!--result-->
+			</div>
+			<!--formandresult-->
+  	</div>
+  	<!--example-->
+
+		<!--##  6  ##-->
+		<div class="example">
+			<div class="description">
+				<h3>Return Largest Numbers in Arrays</h3>
+
+				<p>Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.</p>
+
+				<p>Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].</p>
+
+				<h4>Concepts:</h4>
+				<ul>
+					<li>Comparison Operators</li>
+				</ul>
+				<h4>Harder Test Data:</h4>
+				<p></p>
+			</div><!--description-->
+
+			<div class="formandresult">
+				<form id="form" onsubmit="return false;">
+		    	<input
+			    	type="text"
+			    	id="largestOfFourInput"
+			    	onfocus="if (this.value == 'ENTER A SENTENCE') { this.value = ''; }"
+			    	onblur="if (this.value == '') { this.value = 'ENTER A SENTENCE'; }"
+			    	value='ENTER A SENTENCE'
+		    	/>
+
+
+		    	<input type="submit" class="btn btn-success" value="Submit Button" onclick="largestOfFour();">
+		    	<!--calls findLongestWord Function in algorithms.js-->
+				</form>
+
+				<div class="result">
+					<h2>RESULTS:</h2>
+
+					<h2 id="largestOfFourIt">
+					</h2>
+
+				</div>
+				<!--result-->
+			</div>
+			<!--formandresult-->
+  	</div>
+  	<!--example-->
+
+
+  </div>
+  <!--algorithms-->
+  <script src="algorithms.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+</html>
